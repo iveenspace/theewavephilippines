@@ -285,18 +285,13 @@
                     <div class="photostrip-header text-center mb-5">
                     </div>
                     
-                    <!-- XINGXING Photo -->
-                    <div class="group-photo-container mb-12" style="width: 405px; height: 300px; display: flex; align-items: center; justify-content: center; overflow: hidden; background-color: transparent; border: none;">
-                        <img id="XINGXINGGroupPhoto" src="./Myhonghong.png" alt="XINGXINGGroup" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                    </div>
-
                     <div id="photoStripContainer" class="flex flex-col gap-4 mb-12">
                         <!--  will be generated here -->
                     </div>
 
                     <div class="photostrip-footer">
-                        <p class="text-[16px] text-blue-500">THEEWAVE</p>
-                        <p class="text-[15px] text-blue-500">THEEWAVE PHILIPPINES </p>
+                        <p class="text-[16px] text-blue-700">THEEWAVE</p>
+                        <p class="text-[15px] text-blue-700">THEEWAVE PHILIPPINES </p>
                     </div>
                 </div>
                 
@@ -609,10 +604,6 @@
                         ctx.drawImage(logoElement, logoX, logoY, logoWidth, logoHeight);
                     }
                     
-                    // Add the HAPPY BIRTHDAY ELIOT! group photo area
-                    const membersAreaY = 180;
-                    const membersAreaHeight = 300;
-                    
                     const drawMembersArea = () => {
                         // Create a subtle overlay background
                         ctx.globalAlpha = 0.1;
@@ -620,15 +611,6 @@
                         ctx.fillRect(0, membersAreaY, stripWidth, membersAreaHeight);
                         ctx.globalAlpha = 1;
                         
-                        // Try to draw the XINGXING group photo if available
-                        const XINGXINGPhotoElement = document.getElementById('XINGXINGGroupPhoto');
-                        if (XINGXINGPhotoElement && XINGXINGPhotoElement.complete && XINGXINGPhotoElement.naturalHeight !== 0) {
-                            // Calculate dimensions to fit the photo properly
-                            const imgAspect = XINGXINGPhotoElement.naturalWidth / XINGXINGPhotoElement.naturalHeight;
-                            const areaAspect = stripWidth / membersAreaHeight;
-                            
-                            let drawWidth, drawHeight, drawX, drawY;
-                            
                             if (imgAspect > areaAspect) {
                                 // Image is wider, fit to width
                                 drawWidth = stripWidth;
