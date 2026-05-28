@@ -280,7 +280,7 @@
             <div>
                 <div class="photostrip-container">
                     <div class="photostrip-logo text-center mb-5">
-                        <img src="./Myhonghong_1.png" alt="HONG PHILIPPINES" class="mx-auto" style="max-width: 200px; height: 155px;">
+                        <img src="./TW LOGO.png" alt="THEEWAVE PHILIPPINES" class="mx-auto" style="max-width: 200px; height: 155px;">
                     </div>
                     <div class="photostrip-header text-center mb-5">
                     </div>
@@ -295,8 +295,8 @@
                     </div>
 
                     <div class="photostrip-footer">
-                        <p class="text-[16px] text-yellow-255">HONG PICHETPONG CHIRADATESAKUNVONG </p>
-                        <p class="text-[15px] text-yellow-255">HONG PHILIPPINES </p>
+                        <p class="text-[16px] text-blue-500">THEEWAVE</p>
+                        <p class="text-[15px] text-blue-500">THEEWAVE PHILIPPINES </p>
                     </div>
                 </div>
                 
@@ -720,17 +720,17 @@
                     // Footer section - matching the exact layout with gold colors
                     const footerStartY = stripHeight - 70;
                     
-                    ctx.fillStyle = '#FFFF00';
+                    ctx.fillStyle = '#0000FF';
                     ctx.font = 'bold 18px "Montserrat", sans-serif';
-                    ctx.fillText('HONG PICHETPONG CHIRADATESAKUNVONG', stripWidth / 2, footerStartY + 10);
+                    ctx.fillText('THEEWAVE', stripWidth / 2, footerStartY + 10);
                     
-                    ctx.fillStyle = '#FFFF00';
+                    ctx.fillStyle = '#0000FF';
                     ctx.font = 'bold 15px "Montserrat", sans-serif';
-                    ctx.fillText('HONG PHILIPPINES', stripWidth / 2, footerStartY + 30);
+                    ctx.fillText('THEEWAVE PHILIPPINES', stripWidth / 2, footerStartY + 30);
                     
                     // Create download
                     const link = document.createElement('a');
-                    link.download = 'HONG_PHILIPPINES_photostrip.jpg';
+                    link.download = 'THEEWAVE_PHILIPPINES_photostrip.jpg';
                     link.href = photoStripCanvas.toDataURL('image/jpeg', 0.9);
                     link.click();
                     
