@@ -280,7 +280,7 @@
             <div>
                 <div class="photostrip-container">
                     <div class="photostrip-logo text-center mb-5">
-                        <img src="./TW LOGO.png" alt="THEEWAVE PHILIPPINES" class="mx-auto" style="max-width: 200px; height: 155px;">
+                        <img src="./TW LOGO.png" alt="THEEWAVE PHILIPPINES" class="mx-auto" style="max-width: 200px; height: 100px;">
                     </div>
                     <div class="photostrip-header text-center mb-5">
                     </div>
@@ -584,7 +584,7 @@
                     statusMessage.textContent = "Generating photostrip...";
                     
                     const stripWidth = 450;
-                    const stripHeight = 1360;
+                    const stripHeight = 1400;
                     
                     photoStripCanvas.width = stripWidth;
                     photoStripCanvas.height = stripHeight;
@@ -653,7 +653,7 @@
                     drawMembersArea();
                     
                     // Photo slots - clean layout matching reference
-                    const photoStartY = 510;
+                    const photoStartY = 550;
                     const photoWidth = 390;
                     const photoHeight = 220;
                     const photoSpacing = 35;
@@ -669,7 +669,7 @@
                             ctx.fillRect(photoX, yPos, photoWidth, photoHeight);
                             
                             // Add frame border
-                            ctx.strokeStyle = '#FFFF00';
+                            ctx.strokeStyle = '#0000FF';
                             ctx.lineWidth = 2;
                             ctx.strokeRect(photoX, yPos, photoWidth, photoHeight);
                             
